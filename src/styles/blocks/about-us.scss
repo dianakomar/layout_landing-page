@@ -1,17 +1,16 @@
 .about-us {
-  background-color: #FCFAEF;
-  // @include pageGrid;
+  background-color: #fcfaef;
   overflow: hidden;
   &__image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 
-    @include onTablet {
+    @include on-tablet {
       height: 400px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       height: 460px;
     }
   }
@@ -19,19 +18,19 @@
   &__text {
     padding-block: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       padding-block: 120px;
     }
-    @include pageGrid;
+    @include page-grid;
 
     &__content {
       grid-column: 1 / -1;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: 4 / 7;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: 8 / -1;
       }
     }
@@ -39,11 +38,11 @@
     &__title {
       grid-column: 1 / -1;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: 1 / 4;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 6;
       }
     }
@@ -53,14 +52,12 @@
       width: 100%;
       height: 200px;
 
-
-      @include onTablet {
+      @include on-tablet {
         height: 400px;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         height: 460px;
-
       }
     }
 

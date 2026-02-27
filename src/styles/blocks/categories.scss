@@ -4,7 +4,7 @@
     display: grid;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 56px;
     }
   }
@@ -14,17 +14,17 @@
   margin-bottom: 40px;
 
   &__photos {
-    @include pageGrid;
+    @include page-grid;
+
     margin-bottom: 16px;
   }
 
   &__link {
-
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
@@ -35,7 +35,7 @@
     height: 100%;
     object-fit: cover;
 
-    @include imgTransition;
+    @include img-transition;
   }
 
   &__title {
@@ -46,16 +46,16 @@
   }
 
   &__footer {
-    @include pageGrid;
+    @include page-grid;
 
     &__button {
-      @include primaryButton;
+      @include primary-button;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: 1 / -1;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }

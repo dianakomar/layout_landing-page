@@ -1,12 +1,10 @@
 .header {
-
   background-image: url(../images/header-bg-mobile.png);
   background-size: cover;
   background-position: center;
 
   &__content {
     height: 100vh;
-
 
     display: flex;
     flex-direction: column;
@@ -27,7 +25,7 @@
     line-height: 100%;
     color: $header-color;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 48px;
     }
   }
@@ -40,9 +38,8 @@
   &__bottom {
     padding-bottom: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       padding-bottom: 64px;
     }
   }
 }
-
