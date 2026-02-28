@@ -78,6 +78,7 @@
     border: 1px solid $background-forms;
     background-color: $background-forms;
     color: $font-color-forms;
+    resize: none;
 
     &:hover {
       color: $main-text-color;

@@ -15,24 +15,27 @@
 
   &--phone {
     background-image: url(../icons/phone_icon.svg);
-    &::after {
-      content: '+1 234 5555-55-55';
-      position: absolute;
-      left: -105px;
-      bottom: 7px;
-      color: $main-text-color;
-      display: block;
 
-      transform: scale(0);
-      transition: transform 0.3s;
-      transform-origin: right;
+    @include on-desktop {
+      &::after {
+        content: '+1 234 5555-55-55';
+        position: absolute;
+        left: -105px;
+        bottom: 7px;
+        color: $main-text-color;
+        display: block;
 
-      font-size: 12px;
-      font-weight: 700;
-    }
+        transform: scale(0);
+        transition: transform 0.3s;
+        transform-origin: right;
 
-    &:hover::after {
-      transform: scale(1);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+      }
     }
   }
 
